@@ -1,0 +1,201 @@
+<body>
+
+      <!-- BEGIN: Page Header -->
+
+      <div class="container-head">
+        <div class="container-ltgrey">
+        <div class="row"><br>
+          <div class="col-md-12 text-right"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/CCNYlogo_oneline.png" alt="logo" style="width: 25%; height: auto">
+          </div>
+          </div><hr>
+          </div>
+
+             <div class="row">
+                 <div class="col-md-12"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/CCNY_libraries_website.png" alt="logo" style="width: 50%; height: auto"></div>
+               </div>
+           </div>
+      <!-- Navigation -->
+      <nav class="navbar navbar-default  navbar-static-top">
+          <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-examp;le-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">CCNY Libraries</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-examp;le-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="#">Divisions<span class="sr-only">(current)</span></a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">Databases</a></li>
+                              <li><a href="#">Journals by Title</a></li>
+                              <li><a href="#">Subject Guides</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Faculty</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Ask Us</a></li>
+                      </li>
+                  </ul>
+                  </li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+      </nav>
+
+      <!-- START PAGE CONTENT -->
+      <!-- fake jumbotron -->
+          <div class="container-fluid" id="jumbo">
+              <div class="row">
+                <div class="col-md-2"></div>
+                  <div class="col-md-8 text-center">
+                      <div class="panel panel-default panel-transparent">
+                          <div class="panel-body" id="search">
+                              <p><h4>Use City College <b>OneSearch</b> to find Books, Articles, Ebooks, and Media.</h4></p><br>
+                              <!-- OneSearch -->
+                              <form name="searchPrimoForm1" role="search" method="get" action="https://onesearch.cuny.edu/primo-explore/search" onsubmit="addPrimoQuery();" enctype="application/x-www-form-urlencoded; charset=utf-8">
+                                  <input name="institution" value="CC" type="hidden" />
+                                  <input name="vid" value="cc" type="hidden" />
+                                  <input name="tab" value="default_tab" type="hidden" />
+                                  <input name="search_scope" value="everything" type="hidden" />
+                                  <input name="mode" value="basic" type="hidden" />
+                                  <input name="highlight" value="true" type="hidden" />
+                                  <input name="displayMode" value="full" type="hidden" />
+                                  <input name="bulkSize" value="10" type="hidden" />
+                                  <input name="dum" value="true" type="hidden" />
+                                  <input name="displayField" value="all" type="hidden" />
+                                  <input name="pcAvailabiltyMode" value="false" type="hidden" />
+                                  <input name="query" id="primoQuery" type="hidden" />
+                                  <div class="input-group">
+                                      <input name="queryTemp" id="primoQueryTemp" type="search" value="" placeholder="Enter search term here" class="form-control" />
+                                      <br>
+                                      <span class="input-group-btn">
+      <button class="btn btn-search" type="button">Search</button>
+    </span>
+                              </form>
+                              </div>
+                              <script type="text/javascript">
+                                  function addPrimoQuery() {
+                                      document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
+                                      document.forms["searchPrimoForm1"].submit();
+                                  }
+                              </script>
+                              <div class="row">
+                                  <div class="col-md-6 text-left"><a href="https://onesearch.cuny.edu/primo-explore/search?vid=cc&sortby=rank&lang=en_US" target="_blank">Advanced Search</a>
+                                  </div>
+                                  <div class="col-md-6 text-right"><a href="#" data-toggle="tooltip" data-placement="left" title="City College OneSearch combines in one searchable place these three things: the CUNY library catalog; a massive index of articles from journals, magazines, and newspapers; and unique digital content from the library.">What am I searching?</a>
+                                  </div>
+                              </div>
+                              <br>
+                              <h4><p>More search options:</p>
+                              <p>Books | Databases | Journals by Title | Reserves</p></h4>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2"></div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-purple"><br></div>
+      <div class="container"><br>
+          <div class="row">
+              <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-4"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/hours.png" alt="research" style="width:75%; height: auto">
+                      </div>
+                      <div class="col-md-4"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/Research1.png" alt="research" style="width:75%; height: auto">
+                        <p>Reserves</p></div>
+                        <div class="col-md-4"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/Research1.png" alt="research" style="width:75%; height: auto">
+                          <p>Special Collections</p></div>
+                    </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-4"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/computers.png" alt="research" style="width:75%; height: auto">
+                      </div>
+                      <div class="col-md-4"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/Research1.png" alt="research" style="width:75%; height: auto">
+                        <p>My Account</p></div>
+                        <div class="col-md-4"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/Research1.png" alt="research" style="width:75%; height: auto">
+                          <p>Research Guides</p></div>
+                    </div><br>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                          <p>Library News</p>
+                          <script type="text/javascript" src="//lgapi-us.libapps.com/web/jquery/js/1.12.1_jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        1 || document.write('<script src="//lgapi-us.libapps.com/web/jquery/js/jquery-ui.min.js?2695">\x3C/script>');
+    </script>
+<script type="text/javascript" src="//lgapi-us.libapps.com/web/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//lgapi-us.libapps.com/web/js1.30.6/springshare.public.min.js"></script>
+<script type="text/javascript" src="//lgapi-us.libapps.com/web/js1.30.6/springshare.common.min.js"></script>
+<script type="text/javascript" src="//lgapi-us.libapps.com/web/js1.30.6/common/springspace_sui_helptip.js"></script>
+<link rel="stylesheet" href="//lgapi-us.libapps.com/web/jquery/css/jquery-ui.min.css?2695" />
+<link rel="stylesheet" href="//lgapi-us.libapps.com/web/bootstrap/3.4.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//lgapi-us.libapps.com/web/css1.30.6/springshare.public.min.css" />
+<link rel="stylesheet" href="//lgapi-us.libapps.com/web/css1.30.6/springshare.common.min.css" />
+<link href="//lgapi-us.libapps.com/web/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//lgapi-us.libapps.com/web/css1.30.6/common/springspace_sui_helptip.css" rel="stylesheet">
+<script>
+var springStats = springStats || {};
+springStats.saConfig = springStats.saConfig || {
+    site_id: 5029,
+    tracking_parameters: {"_st_site_id":5029},
+    tracking_server_host: "libguides-proc.springyaws.com"
+};
+</script>
+<script async  src="//lgapi-us.libapps.com/web/js/sa.min.js?3116"></script>
+<script>
+    springSpace.Common = springSpace.Common || { };
+    springSpace.Common.constant = { PROCESSING: { ACTION_DISPLAY_POLL: 159 }};
+    springSpace.Common.baseURL = "//lgapi-us.libapps.com'/";
+    springSpace.Common.apiLoad = true;
+</script><script>
+springshare_widget_config_1555445461715 = { path: 'blogs' };
+</script>
+<div id="s-lg-widget-1555445461715"></div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://lgapi-us.libapps.com/widgets.php?site_id=5029&widget_type=12&widget_embed_type=1&output_format=1&widget_title=Library+News&widget_height=250&widget_width=100%25&widget_link_color=2954d1&window_target=2&display_teaser=0&display_post=0&display_images=0&num_results=5&enable_more_results=1&blog_id=0&display_post_date=1&config_id=1555445461715";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","s-lg-widget-script-1555445461715");</script>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+
+      <!-- /.container -->
+
+      <!-- Footer -->
+      <footer class="footer">
+          <div class="container"><br>
+            <div class="row">
+                <div class="col-md-3 text-center"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/CCNY_logo_grey.png" alt="CCNY Logo" width=50% height=auto>
+                </div>
+                <div class="col-md-3 text-center">links n' stuff
+                </div>
+                <div class="col-md-3 text-center">social media icons
+                </div>
+                <div class="col-md-3 text-center"><a href="https://www.ccny.cuny.edu/" target="_blank"><img src="https://libapps.s3.amazonaws.com/accounts/186235/images/CUNY_logo_white.png" alt="CUNY logo" width=50% height=auto></a>
+                </div>
+              </div>
+          </div>
+      </footer>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      </div>
+  </body>
